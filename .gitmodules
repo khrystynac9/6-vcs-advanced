@@ -1,0 +1,3 @@
+[submodule "mySob"]
+	path = mySob
+	url = https://github.com/khrystynac9/gitHomeTask.git
