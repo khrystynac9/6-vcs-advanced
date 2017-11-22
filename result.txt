@@ -1,0 +1,118 @@
+Task #1 
+
+$ git clone https://github.com/khrystynac9/gitHomeTask.git
+$ cd gitHomeTask
+$ git checkout -b architecture
+$ mkdir assets
+$ mkdir uploads
+$ touch index.html
+$ git status
+$ git add .
+$ git commit -m "text"
+$ git push origin architecture
+$ cd assets
+$ touch all.js
+$ touch css.js
+$ git add .
+$ git commit -m "text"
+$ git push origin architecture
+$ touch .gitignore
+$ vim .gitignore
+$ git status
+$ git add .
+$ git commit -m "text"
+$ git push origin architecture
+$ git checkout master
+$ git merge architecture
+$ git branch -d architecture
+$ git add .
+$ git commit -m "text"
+$ git push
+$ git push origin :architecture
+
+
+Task #2
+
+$ git clone https://github.com/khrystynac9/6-vcs-advanced.git
+$ cd 6-vcs-advanced
+$ touch index.html
+$ vim index.html
+$ git add .
+$ git commit -m "added html file"
+$ git checkout -b myBranch
+$ git rebase master
+$ touch index.css
+$ mkdir myFolder
+$ git add .
+$ git commit -m "text"
+$ git checkout master
+$ git merge myBranch
+$ git branch -d myBranch
+$ git add .
+$ git commit -m "text"
+$ git push
+
+
+Task #3
+
+$ cd myFolder
+$ touch myDoc.txt
+$ touch index.css
+$ git add .
+$ git commit -m "added sone docs to meFolder"
+$ git push
+$ git tag firstTag
+$ cd myFolder
+$ touch inedx.html
+$ git tag secondTag
+$ git add .
+$ git commit -m "second tag"
+$ git push
+$ git push origin --tags
+
+Task #4
+
+$ git submodule add https://github.com/khrystynac9/gitHomeTask.git mySob
+$ git add .
+$ git commit -m "added submodule mySob"
+$ git push
+
+Task #5
+
+$ git clone https://github.com/khrystynac9/gitTask5.git
+$ cd gitTask5
+$ git checkout -b gh-pages
+$ echo "hello everybody" > index.html
+$ git add .
+$ git commit -m "added index.html"
+$ git push origin gh-pages
+$ vim index.html
+$ git add .
+$ git commit -m "added kolibri foto"
+$ git push origin gh-pages
+
+https://khrystynac9.github.io/gitTask5
+
+
+Task #6
+
+$ touch file.txt
+$ vim file.txt
+$ git add .
+$ git commit -m "version1"
+$ git checkout master
+$ touch file.txt
+$ vim file.txt
+$ git add .
+$ git commit -m "version2"
+$ git merge gh-pages
+Auto-merging file.txt
+CONFLICT (add/add): Merge conflict in file.txt
+Automatic merge failed; fix conflicts and then commit the result.
+$ vim file.txt
+$ git add .
+$ git commit -m "conflict resolution"
+$ git branch -d gh-pages
+$ git push origin master
+$ git push origin -d gh-pages
+
